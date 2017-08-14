@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/austin/.oh-my-zsh
+export ZSH=/home/austin/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,16 +45,30 @@ ZSH_THEME="austin"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump aws brew dirhistory docker git git-extras github nyan osx pip pyenv pylint python redis-cli sudo vagrant zsh-syntax-highlighting history-substring-search)
-
-# Autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+plugins=(dirhistory docker git git-extras github nyan osx pip pyenv pylint python sudo vagrant zsh-syntax-highlighting history-substring-search)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:$HOME/go/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 export EDITOR='vim'
 
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 
+eval `dircolors /home/austin/.dir_colors/dircolors`
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /home/austin/Downloads/google-cloud-sdk/path.zsh.inc ]; then
+  source '/home/austin/Downloads/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /home/austin/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/home/austin/Downloads/google-cloud-sdk/completion.zsh.inc'
+fi
+
+# This way the completion script does not have to parse Bazel's options
+# repeatedly.  The directory in cache-path must be created manually.
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
