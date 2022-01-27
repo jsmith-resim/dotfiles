@@ -45,7 +45,7 @@ ZSH_THEME="austin"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(dirhistory docker git git-extras github nyan osx pip pyenv pylint python sudo vagrant zsh-syntax-highlighting history-substring-search)
+plugins=(dirhistory docker git git-extras github nyan macos pip pyenv pylint python sudo vagrant zsh-syntax-highlighting history-substring-search)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
