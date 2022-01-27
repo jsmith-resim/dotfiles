@@ -45,7 +45,7 @@ ZSH_THEME="austin"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(dirhistory docker git git-extras github nyan macos pip pyenv pylint python sudo vagrant zsh-syntax-highlighting history-substring-search)
+plugins=(dirhistory docker git git-extras github macos pip pyenv pylint python sudo vagrant history-substring-search)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
@@ -54,19 +54,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export EDITOR='vim'
 
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
-
-eval `dircolors /home/austin/.dir_colors/dircolors`
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /home/austin/Downloads/google-cloud-sdk/path.zsh.inc ]; then
-  source '/home/austin/Downloads/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /home/austin/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/home/austin/Downloads/google-cloud-sdk/completion.zsh.inc'
-fi
 
 # This way the completion script does not have to parse Bazel's options
 # repeatedly.  The directory in cache-path must be created manually.
