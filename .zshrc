@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/austin/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -50,8 +50,6 @@ plugins=(dirhistory docker git git-extras github macos pip pyenv pylint python s
 # User configuration
 source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
-export EDITOR='vim'
 
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 
