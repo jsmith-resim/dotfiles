@@ -49,7 +49,11 @@ plugins=(dirhistory docker git git-extras github macos pip pyenv pylint python s
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
+export EDITOR=code
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# Add vscode bin directory to path
+for d in ~/.vscode-server/bin/*/bin/remote-cli; do export PATH="$PATH:$d"; done
 
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 
