@@ -49,7 +49,7 @@ plugins=(dirhistory docker git git-extras github macos pip pyenv pylint python s
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
-export EDITOR=code
+export EDITOR="code --wait"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Add vscode bin directory to path
