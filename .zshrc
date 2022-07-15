@@ -50,7 +50,7 @@ plugins=(dirhistory docker git git-extras github macos pip pyenv pylint python s
 # User configuration
 source $ZSH/oh-my-zsh.sh
 export EDITOR="code --wait"
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin"
 
 # Add vscode bin directory to path
 for d in ~/.vscode-server/bin/*/bin/remote-cli; do export PATH="$PATH:$d"; done
