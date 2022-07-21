@@ -1,0 +1,14 @@
+[init]
+    defaultBranch = main
+[core]
+    editor = 'code --wait'
+    pager = 'cat'
+[user]
+    email = austin@resim.ai
+    name = Austin McDonald
+[credential "https://github.com"]
+    helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+    helper = !/usr/bin/gh auth git-credential
+[status]
+    short = true
