@@ -4,8 +4,8 @@
     editor = 'code --wait'
     pager = 'cat'
 [user]
-    email = austin@resim.ai
-    name = Austin McDonald
+    email = jessie@resim.ai
+    name = Jessie Smith 
 [credential "https://github.com"]
     helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
